@@ -1,1 +1,3 @@
-# AngularFun
+# Angular.js
+
+https://angularjs.org
