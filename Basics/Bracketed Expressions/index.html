@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>Angular Setup</title>
+    <meta charset="utf-8" />
+    <script src="../libs/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-controller="MainController">
+
+    <p>Standard bracket expression:</p>
+    <p>{{ randomValue }}</p>
+
+    <p>One time bracket expression:</p> <!--If only one value is only necessary-->
+    <p>{{ ::randomValue }}</p>
+
+    <p>Array bracket expression:</p>
+    <p>{{ names[1] }}</p>
+
+    <p>Operation bracket expression:</p>
+    <p>{{ qty * cost }}</p>
+
+    <p>Conditional bracket expression:</p>
+    <p>{{ randomValue > 500000 }}</p>
+
+    <p>Enter width: <input type="text" ng-model="pWidth" /></p>
+    <p style="background:#ff0000; width:{{pWidth}}px">
+        This is a dynamic paragraph.
+
+    </p>
+
+</body>
+</html>
