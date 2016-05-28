@@ -2,10 +2,8 @@
 
 https://angularjs.org
 
-##AngularJS API Docs
+##AngularJS Controllers
 
-https://docs.angularjs.org/api
+http://www.w3schools.com/angular/angular_controllers.asp
 
-##AngularJS References
 
-http://www.w3schools.com/angular/angular_ref_directives.asp
