@@ -1,36 +1,40 @@
 ﻿<!DOCTYPE html>
 <html ng-app="myApp">
 <head>
-    <title>Controllers</title>
+    <title>Share Data Between Controllers</title>
     <meta charset="utf-8" />
     <script src="../libs/angular.min.js"></script>
     <script src="app.js"></script>
 </head>
 <body>
+    <!--
+        First Method Using Nesting Approach
+    
+
     <div ng-controller="ParentController">
 
-       <input type="text" ng-model="model.name" /> 
-       <p>Im the Parent: {{ model.name }}</p> 
-       
-
-
-        <div ng-controller="ChildController">
+        <div ng-controller="FirstController">
            <input type="text" ng-model="model.name" />
-           <p>Im the Parent: {{ model.name }}</p> 
+           <p>First Controller: {{ model.name }}</p> 
         </div>
 
+        <div ng-controller="SecondController">
+            <input type="text" ng-model="model.name" />
+            <p>Second Controller: {{ model.name }}</p>
+        </div>
+    </div>
+    -->
+
+    <div ng-controller="FirstController">
+        <input type="text" ng-model="model.name" />
+        <p>First Controller: {{ model.name }}</p>
     </div>
 
-    <div ng-controller="ParentController"> <!--Seperate Parent Controller Dependendent on 1st Parent Controller via data binding-->
+    <div ng-controller="SecondController">
         <input type="text" ng-model="model.name" />
-        <p>Im the 2nd Parent: {{ model.name }}</p>
+        <p>Second Controller: {{ model.name }}</p>
     </div>
 
-    <div ng-controller="IndependentController">
-        <!--Independent Controller with own control and data bind-->
-        <input type="text" ng-model="model.name" />
-        <p>Im an Independent Woman: {{ model.name }}</p>
-    </div>
 
 </body>
 </html>
