@@ -6,5 +6,9 @@ http://www.w3schools.com/angular/angular_filters.asp
 
 https://docs.angularjs.org/guide/filter
 
+##currency
+
+https://docs.angularjs.org/api/ng/filter/currency
+
 
 
