@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>Angular App</title>
+    <meta charset="utf-8" />
+    <script src="../libs/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div ng-controller="MainController as main">
+       
+      <!-- Number Format: {{987654321234567890.12345 | number:3}} -->
+        {{main.user | json}} <!--json is the default format but a need to format it this wasy might still arise-->
+       
+       
+    </div>
+</body>
+</html>
