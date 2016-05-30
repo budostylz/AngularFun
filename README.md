@@ -14,4 +14,8 @@ http://www.w3schools.com/angular/angular_ref_directives.asp
 
 http://www.w3schools.com/angular/default.asp
 
+##Developer Guide
+
+https://docs.angularjs.org/guide
+
 
