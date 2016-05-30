@@ -1,10 +1,3 @@
-﻿##ngPattern
+##Directive components in ng
 
-https://docs.angularjs.org/api/ng/directive/ngPattern
-
-##ngClick
-
-https://docs.angularjs.org/api/ng/directive/ngClick
-
-
-
+https://docs.angularjs.org/api/ng/directive
