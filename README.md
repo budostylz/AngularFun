@@ -18,4 +18,6 @@ http://www.w3schools.com/angular/default.asp
 
 https://docs.angularjs.org/guide
 
+##Dealing with DOM Manipulations - AngularJS
 
+http://stackoverflow.com/questions/11699635/dealing-with-dom-manipulations-angularjs
