@@ -1,3 +1,4 @@
+
 # Angular.js
 
 https://angularjs.org
@@ -21,3 +22,7 @@ https://docs.angularjs.org/guide
 ##Dealing with DOM Manipulations - AngularJS
 
 http://stackoverflow.com/questions/11699635/dealing-with-dom-manipulations-angularjs
+
+##Promises and design patterns in AngularJS
+
+http://blog.xebia.com/promises-and-design-patterns-in-angularjs/
