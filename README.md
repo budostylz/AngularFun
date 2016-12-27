@@ -30,3 +30,7 @@ http://blog.xebia.com/promises-and-design-patterns-in-angularjs/
 ##Monitoring $http Activity With $http Interceptors In AngularJS 
 
 https://www.bennadel.com/blog/2777-monitoring-http-activity-with-http-interceptors-in-angularjs.htm
+
+##AngularJS Service / Factory Tutorial with Example
+
+http://viralpatel.net/blogs/angularjs-service-factory-tutorial/
