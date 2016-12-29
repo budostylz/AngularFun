@@ -34,3 +34,12 @@ https://www.bennadel.com/blog/2777-monitoring-http-activity-with-http-intercepto
 ##AngularJS Service / Factory Tutorial with Example
 
 http://viralpatel.net/blogs/angularjs-service-factory-tutorial/
+
+##Search Sort and Pagination in ng-repeat – AngularJS
+
+https://code.ciphertrick.com/2015/06/01/search-sort-and-pagination-ngrepeat-angularjs/
+
+##Grouping Nested ngRepeat Lists In AngularJS 
+
+https://www.bennadel.com/blog/2456-grouping-nested-ngrepeat-lists-in-angularjs.htm
+
