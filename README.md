@@ -43,3 +43,7 @@ https://code.ciphertrick.com/2015/06/01/search-sort-and-pagination-ngrepeat-angu
 
 https://www.bennadel.com/blog/2456-grouping-nested-ngrepeat-lists-in-angularjs.htm
 
+##Go fast with $applyAsync in Angular 1.3
+
+http://blog.thoughtram.io/angularjs/2015/01/14/exploring-angular-1.3-speed-up-with-applyAsync.html
+
