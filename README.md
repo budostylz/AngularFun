@@ -46,7 +46,10 @@ https://www.bennadel.com/blog/2456-grouping-nested-ngrepeat-lists-in-angularjs.h
 
 http://blog.thoughtram.io/angularjs/2015/01/14/exploring-angular-1.3-speed-up-with-applyAsync.html
 
-
 ##Enables HTTP batch request with AngularJS 
 
 https://github.com/jonsamwell/angular-http-batcher
+
+##Sort and Filter a Table Using Angular
+
+https://scotch.io/tutorials/sort-and-filter-a-table-using-angular
