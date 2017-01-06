@@ -53,3 +53,7 @@ https://github.com/jonsamwell/angular-http-batcher
 ##Sort and Filter a Table Using Angular
 
 https://scotch.io/tutorials/sort-and-filter-a-table-using-angular
+
+##Unit Testing
+
+https://docs.angularjs.org/guide/unit-testing
