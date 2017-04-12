@@ -57,3 +57,11 @@ https://scotch.io/tutorials/sort-and-filter-a-table-using-angular
 ## Unit Testing
 
 https://docs.angularjs.org/guide/unit-testing 
+
+## Angular UI Grid
+
+https://github.com/budostylz/AngularJS/edit/master/README.md
+
+## UI Calendar
+
+http://angular-ui.github.io/ui-calendar/
