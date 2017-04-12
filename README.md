@@ -60,7 +60,7 @@ https://docs.angularjs.org/guide/unit-testing
 
 ## Angular UI Grid
 
-https://github.com/budostylz/AngularJS/edit/master/README.md
+http://ui-grid.info/
 
 ## UI Calendar
 
