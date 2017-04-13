@@ -65,3 +65,15 @@ http://ui-grid.info/
 ## UI Calendar
 
 http://angular-ui.github.io/ui-calendar/
+
+## What is Angular Material?
+
+https://material.angularjs.org/latest/
+
+## Progress Linear 
+
+https://material.angularjs.org/latest/demo/progressLinear
+
+##   Select 
+
+https://material.angularjs.org/latest/demo/select
