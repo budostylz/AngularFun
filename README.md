@@ -74,6 +74,10 @@ https://material.angularjs.org/latest/
 
 https://material.angularjs.org/latest/demo/progressLinear
 
-##   Select 
+## Select 
 
 https://material.angularjs.org/latest/demo/select
+
+## $cacheFactory
+
+https://docs.angularjs.org/api/ng/service/$cacheFactory
