@@ -7,7 +7,6 @@ https://angularjs.org
 https://docs.angularjs.org/api
 
 ## AngularJS References
-
 http://www.w3schools.com/angular/angular_ref_directives.asp
 
 ## AngularJS Tutorial
@@ -18,7 +17,7 @@ http://www.w3schools.com/angular/default.asp
 
 https://docs.angularjs.org/guide
 
-## Dealing with DOM Manipulations - AngularJS
+ ## Dealing with DOM Manipulations - AngularJS
 
 http://stackoverflow.com/questions/11699635/dealing-with-dom-manipulations-angularjs
 
@@ -81,3 +80,7 @@ https://material.angularjs.org/latest/demo/select
 ## $cacheFactory
 
 https://docs.angularjs.org/api/ng/service/$cacheFactory
+
+## A slim, site-wide progressbar for AngularJS 
+
+http://victorbjelkholm.github.io/ngProgress/#demo
