@@ -10,7 +10,6 @@ https://docs.angularjs.org/api
 http://www.w3schools.com/angular/angular_ref_directives.asp
 
 ## AngularJS Tutorial
-
 http://www.w3schools.com/angular/default.asp
 
 ## Developer Guide
@@ -20,7 +19,7 @@ https://docs.angularjs.org/guide
  ## Dealing with DOM Manipulations - AngularJS
 
 http://stackoverflow.com/questions/11699635/dealing-with-dom-manipulations-angularjs
-
+ 
 ## Promises and design patterns in AngularJS
 
 http://blog.xebia.com/promises-and-design-patterns-in-angularjs/
@@ -84,3 +83,7 @@ https://docs.angularjs.org/api/ng/service/$cacheFactory
 ## A slim, site-wide progressbar for AngularJS 
 
 http://victorbjelkholm.github.io/ngProgress/#demo
+
+## Caching JSON Arrays Using $cacheFactory in AngularJS 1.2.x
+
+https://www.phase2technology.com/blog/caching-json-arrays-using-cachefactory-in-angularjs-1-2-x/
