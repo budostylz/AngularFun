@@ -9,8 +9,7 @@ https://docs.angularjs.org/api
 ## AngularJS References
 http://www.w3schools.com/angular/angular_ref_directives.asp
 
-## AngularJS Tutorial
-http://www.w3schools.com/angular/default.asp
+## AngularJS Tutorialhttp://www.w3schools.com/angular/default.asp
 
 ## Developer Guide
 
@@ -20,7 +19,7 @@ https://docs.angularjs.org/guide
 http://stackoverflow.com/questions/11699635/dealing-with-dom-manipulations-angularjs
  
 ## Promises and design patterns in AngularJS
-
+n
 http://blog.xebia.com/promises-and-design-patterns-in-angularjs/
 
 
@@ -30,8 +29,7 @@ https://www.bennadel.com/blog/2777-monitoring-http-activity-with-http-intercepto
 
 ## AngularJS Service / Factory Tutorial with Example
 
-http://viralpatel.net/blogs/angularjs-service-factory-tutorial/
-
+ahttp://viralpatel.net/blogs/angularjs-service-factory-tutorial/
 ## Search Sort and Pagination in ng-repeat – AngularJS
 
 https://code.ciphertrick.com/2015/06/01/search-sort-and-pagination-ngrepeat-angularjs/
@@ -43,7 +41,6 @@ https://www.bennadel.com/blog/2456-grouping-nested-ngrepeat-lists-in-angularjs.h
 ## Go fast with $applyAsync in Angular 1.3
 
 http://blog.thoughtram.io/angularjs/2015/01/14/exploring-angular-1.3-speed-up-with-applyAsync.html
-
 ## Enables HTTP batch request with AngularJS 
 
 https://github.com/jonsamwell/angular-http-batcher
@@ -89,6 +86,6 @@ http://victorbjelkholm.github.io/ngProgress/#demo
 https://www.phase2technology.com/blog/caching-json-arrays-using-cachefactory-in-angularjs-1-2-x/
 
 
-## BootStrap Pattern
+## angular.bootstrap Pattern
 
 https://jsfiddle.net/jeremylikness/wMF4x/
