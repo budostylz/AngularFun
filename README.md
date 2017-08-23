@@ -20,8 +20,8 @@ https://docs.angularjs.org/guide
 
 http://stackoverflow.com/questions/11699635/dealing-with-dom-manipulations-angularjs
  
+
 ## Promises and design patterns in AngularJS
-n
 http://blog.xebia.com/promises-and-design-patterns-in-angularjs/
 
 
@@ -30,7 +30,6 @@ http://blog.xebia.com/promises-and-design-patterns-in-angularjs/
 https://www.bennadel.com/blog/2777-monitoring-http-activity-with-http-interceptors-in-angularjs.htm
 
 ## AngularJS Service / Factory Tutorial with Example
-
 ahttp://viralpatel.net/blogs/angularjs-service-factory-tutorial/
 ## Search Sort and Pagination in ng-repeat – AngularJS
 
@@ -41,7 +40,6 @@ https://code.ciphertrick.com/2015/06/01/search-sort-and-pagination-ngrepeat-angu
 https://www.bennadel.com/blog/2456-grouping-nested-ngrepeat-lists-in-angularjs.htm
 
 ## Go fast with $applyAsync in Angular 1.3
-
 http://blog.thoughtram.io/angularjs/2015/01/14/exploring-angular-1.3-speed-up-with-applyAsync.html
 ## Enables HTTP batch request with AngularJS 
 
@@ -91,3 +89,7 @@ https://www.phase2technology.com/blog/caching-json-arrays-using-cachefactory-in-
 ## angular.bootstrap Pattern
 
 https://jsfiddle.net/jeremylikness/wMF4x/
+
+## Add html link in anyone of ng-grid
+
+https://stackoverflow.com/questions/18310007/add-html-link-in-anyone-of-ng-grid
