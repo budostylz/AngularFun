@@ -93,3 +93,7 @@ https://jsfiddle.net/jeremylikness/wMF4x/
 ## Add html link in anyone of ng-grid
 
 https://stackoverflow.com/questions/18310007/add-html-link-in-anyone-of-ng-grid
+
+## OPEN A TEXT FILE WITH ANGULAR
+
+http://connor-johnson.com/2015/05/25/open-a-text-file-with-angular/
