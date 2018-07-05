@@ -9,7 +9,7 @@ https://docs.angularjs.org/api
 ## AngularJS References
 http://www.w3schools.com/angular/angular_ref_directives.asp
 
-## AngularJS Tutorialhttp:
+## AngularJS Tutorial
 
 http://www.w3schools.com/angular/default.asp
 

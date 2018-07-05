@@ -1,0 +1,18 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Angular Setup</title>
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/executing_scope_methods.js"></script>
+</head>
+
+<body ng-controller="MainController">
+
+    <p>
+        <input type="text" ng-model="itemIndex" />
+        <input type="button" value="Get Item" ng-click="getItem()" />
+    </p>
+    <p> Current Item: {{ currentItem }}</p>
+
+</body>
+</html>
