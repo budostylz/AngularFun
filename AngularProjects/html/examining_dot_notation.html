@@ -1,0 +1,28 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Scope Functions</title>
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/examining_dot_notation.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="ParentController">
+
+        <input type="text" ng-model="model.name"/>
+
+        <p>This is the parent: {{ model.name }}</p>
+
+        <div ng-controller="ChildController">
+
+            <input type="text" ng-model="model.name" />
+
+            <p>This is the child: {{ model.name }}</p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
