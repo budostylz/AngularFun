@@ -1,0 +1,37 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Scope Functions</title>
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/using_controllers_and_variable_scope.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="ParentController">
+
+        <input type="text" ng-model="model.name" />
+        <p>This is the parent: {{ model.name }}</p>
+
+        <div ng-controller="ChildController">
+
+            <input type="text" ng-model="model.name" />
+            <p>This is the child: {{ model.name }}</p>
+
+        </div>
+
+    </div>
+
+    <!--Second Parent Controller is Independent and Have No Effect On Other Controllers-->
+    <div ng-controller="ParentController">
+        <input type="text" ng-model="model.name" />
+        <p>This is the second parent: {{ model.name }}</p>
+    </div>
+
+    <div ng-controller="IndieController">
+        <input type="text" ng-model="model.name" />
+        <p>This is the indie parent: {{ model.name }}</p>
+    </div>
+
+</body>
+</html>
