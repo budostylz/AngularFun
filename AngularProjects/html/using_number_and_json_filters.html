@@ -1,0 +1,23 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Using Number and JSON Filters</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/using_number_and_json_filters.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+        {{7347364.4343764 | number:0 }} 
+
+        {{ main.user | json }}
+
+    </div>
+
+
+
+</body>
+</html>

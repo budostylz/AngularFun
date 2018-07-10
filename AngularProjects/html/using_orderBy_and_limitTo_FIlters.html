@@ -1,0 +1,28 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Angular Setup</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/using_orderBy_and_limitTo_Filters.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+        <ul ng-repeat="user in main.users | orderBy:'balance' | limitTo:2:3"> <!-- Apply '-balance' for Descending Order-->
+            <li> Name: {{ user.firstName + ' ' + user.lastName}} </li>
+            <li> Account: {{ user.accountType}} </li>
+            <li> Balance: {{ user.balance}} </li>
+            <li> Birthday: {{ user.birthday}} </li>
+
+
+        </ul>
+
+    </div>
+
+
+
+</body>
+</html>

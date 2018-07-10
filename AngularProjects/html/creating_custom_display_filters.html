@@ -1,0 +1,21 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Angular Setup</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/creating_custom_display_filters.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="MainController as main" class="outer-div">
+        <p> Name: {{ main.user.name | capitalize }}</p>
+        <p> Account Type: {{ main.user.accountType }}</p>
+        <p> Balance: {{ main.user.balance | currency: 'USD $':0}}</p>
+    </div>
+
+
+
+</body>
+</html>
