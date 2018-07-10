@@ -1,0 +1,29 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Scope Functions</title>
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/sharing_data_between_multiple_controllers.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="ParentController">
+
+        <div ng-controller="FirstController">
+            <input type="text" ng-model="model.name" />
+            <p>This is the first controller: {{ model.name }}</p>
+        </div>
+
+        <div ng-controller="SecondController">
+            <input type="text" ng-model="model.name" />
+            <p>This is the second controller: {{ model.name }}</p>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+</html>

@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\libs",
-    "\\src"
+    "\\html",
+    "\\js",
+    "\\libs"
   ],
-  "SelectedNode": "\\src\\index.html",
+  "SelectedNode": "\\js\\examining_dot_notation.js",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,39 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Using Controller as Syntax</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/using_controller_as_syntax.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="ParentController as parent" class="outer-div">
+
+        <p> This is the parent: {{ parent.message }}</p>
+
+        <div ng-controller="FirstChild as first" class="inner-div">
+            <p> This is the parent: {{ parent.message }}</p>
+            <p> This is the first child: {{ first.message }}</p>
+
+
+        </div>
+
+        <div ng-controller="SecondChild as second" class="inner-div">
+            <p> This is the parent: {{ parent.message }}</p>
+            <p> This is the second child: {{ second.message }}</p>
+            <p>Randomize: {{ second.value }}</p>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>
