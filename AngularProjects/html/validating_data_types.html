@@ -1,0 +1,29 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Angular Setup</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/validating_data_types.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+        <p> Data: {{ main.data }}</p>
+
+        <hr />
+
+        <ul>
+            <li ng-repeat="result in main.results">
+                {{ result }}
+            </li>
+        </ul>
+
+    </div>
+
+
+
+</body>
+</html>
