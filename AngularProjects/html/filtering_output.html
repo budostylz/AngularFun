@@ -1,0 +1,43 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Using CSS Classes</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles3.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/filtering_output.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+        <p>Select a food group:</p>
+        <p>
+
+
+            <select ng-model="main.selectedType.type">
+                <option value="">All</option>
+                <option value="dairy">Dairy</option>
+                <option value="fruits">Fruits</option>
+                <option value="grains">Grains</option>
+                <option value="meats">Meats</option>
+                <option value="other">Other</option>
+                <option value="vegetables">Vegetables</option>
+            </select>
+
+
+        </p>
+
+        <hr/>
+
+        <ul>
+            <li ng-repeat="item in main.items | filter:main.selectedType">
+                {{ item.name }} {{ item.type }} 
+            </li>
+        </ul>
+
+    </div>
+
+
+</body>
+</html>
