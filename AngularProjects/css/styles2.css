@@ -1,0 +1,42 @@
+﻿
+body {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+div{
+    box-sizing:border-box;
+    border: #999999 1px solid;
+    border-radius: 8px;
+    padding:16px;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+p{
+    margin: 4px;
+}
+
+input{
+    border: 1px solid #888888;
+    border-radius: 8px;
+    padding: 1px 8px 1px 8px;
+}
+
+/* Dynamic Angular Classes */
+
+div.ng-scope{
+    background: #ddddff;
+}
+
+.ng-binding{
+    color: #ff0000;
+}
+
+input.ng-pristine{
+    background: #ddffdd;
+}
+
+input.ng-dirty{
+    background: #ffdddd;
+}

@@ -1,0 +1,51 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Angular Setup</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/performing_validation.js"></script>
+</head>
+
+<body ng-controller="MainController as main">
+
+    <!-- Source: https://codepen.io/BilHim/pen/bKPBqp?page=3 -->
+
+    <form name ="userForm" class="box" novalidate>
+        <h1>Login</h1>
+        <div class="form">
+            <label>First Name:</label>
+            <input type="text" ng-model="main.user.firstName" required>
+
+            <label>Last Name:</label>
+            <input type="text" ng-model="main.user.lastName" required>
+
+            <label>Phone (10 digits)</label>
+            <input type="text" ng-model="main.user.phone" required ng-minlength="10">
+
+            <label>Email Address:</label>
+            <input type="email" ng-model="main.user.email" required>
+
+            <label>Zip Code:</label>
+            <input type="text" ng-model="main.user.zip" required ng-pattern="/\d{5}([ \-]\d{4})?/">
+
+
+
+            <a href="#">Forgot password?</a>
+            <button ng-click="main.submitForm(userForm)">Login</button>
+        </div>
+        <div class="social">
+            <span>Login using</span>
+            <a class="fb" href="#"><i class="icon ion-logo-facebook"></i></a>
+            <a class="go" href="#"><i class="icon ion-logo-google"></i></a>
+            <a class="gh" href="#"><i class="icon ion-logo-github"></i></a>
+        </div>
+    </form>
+
+    <p>
+        {{ main.user }}
+    </p>
+
+
+</body>
+</html>
