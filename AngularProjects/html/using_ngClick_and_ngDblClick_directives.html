@@ -1,0 +1,30 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Angular Setup</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/using_ngClick_and_ngDblClick_directives.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+        <button ng-click="main.doClick()">Click</button>
+        <button ng-dblclick="main.doDoubleClick()">Double-click</button>
+        <button ng-click="main.doClick()" ng-dblclick="main.doDoubleClick()">Click or Double-click</button>
+
+
+        <hr />
+
+        <p># clicks: {{ main.clickCount }}</p>
+        <p># double-clicks: {{ main.doubleClickCount }}</p>
+
+
+    </div>
+
+
+
+</body>
+</html>

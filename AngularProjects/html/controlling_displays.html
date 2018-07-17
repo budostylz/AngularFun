@@ -1,0 +1,47 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Angular Setup</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/controlling_displays.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+        <p>
+            Show first item?
+            <input type="radio" name="first" ng-model="main.showFirstItem" ng-value="true" />Yes
+            <input type="radio" name="first" ng-model="main.showFirstItem" ng-value="false" />No
+        </p>
+
+        <p>
+            Show second item?
+            <input type="radio" name="second" ng-model="main.showSecondItem" ng-value="true" />Yes
+            <input type="radio" name="second" ng-model="main.showSecondItem" ng-value="false" />No
+        </p>
+
+        <p>
+            Hide third item?
+            <input type="radio" name="third" ng-model="main.hideThirdItem" ng-value="true" />Yes
+            <input type="radio" name="third" ng-model="main.hideThirdItem" ng-value="false" />No
+        </p>
+
+
+
+        <div ng-show="main.showFirstItem" class="inner-div">This is the first item.</div>
+
+        <div ng-show="main.isSecondItemShowing()" class="inner-div">This is the second item.</div>
+
+        <div ng-hide="main.hideThirdItem" class="inner-div">This is the third item.</div>
+
+
+
+    </div>
+
+
+
+</body>
+</html>

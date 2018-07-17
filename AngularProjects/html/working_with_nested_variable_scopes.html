@@ -1,0 +1,23 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Angular Setup</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/working_with_nested_variable_scopes.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="MainController" class="outer-div">
+
+        <p> {{ userModel.name }}, age {{ userModel.age }}</p>
+        <p> {{ sayHello() }}</p>
+
+
+    </div>
+
+
+
+</body>
+</html>

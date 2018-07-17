@@ -1,0 +1,34 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Angular Setup</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/using_nginclude.js"></script>
+</head>
+
+<body>
+
+    
+    <div ng-controller="MainController as main" class="outer-div">
+        <!--ng-include works good with IE Edge. Test for cross domain compatibility with various browsers.-->
+        <!-- <ng-include src="'../partials/cars-short.html'"></ng-include> -->
+        <!-- <div ng-include src="'../partials/cars-long.html'"></div> -->
+
+        <p>
+            Select the view
+            <select ng-model="main.viewType">
+                <option value="../partials/cars-short.html">Short</option>
+                <option value="../partials/cars-long.html">Long</option>
+            </select>
+        </p>
+
+       <div ng-include src="main.viewType"></div>
+
+
+    </div>
+
+
+
+</body>
+</html>

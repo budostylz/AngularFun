@@ -1,0 +1,26 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Angular Setup</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/using_ngclick.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+        <p> <button ng-click="main.updateClickCount(5)">ng-click</button> </p>
+        <p> <button onClick="externalClick(this, 5)">onclick</button> </p>
+
+        <hr/>
+
+        <p> Clicks: {{ main.clickCount }} </p>
+
+    </div>
+
+
+
+</body>
+</html>
