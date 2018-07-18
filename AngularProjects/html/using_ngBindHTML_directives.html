@@ -1,0 +1,31 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Angular Setup</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/using_ngBindHTML_directives.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+        <p> {{ main.standardBind }}</p>
+        <p ng-bind="main.standardBind"></p>
+
+        <p>&nbsp;</p>
+
+        <p>{{ main.firstTemplateBinding }} and {{ main.secondTemplateBinding }}</p>
+        <p ng-bind-template="{{ main.firstTemplateBinding }} and {{ main.secondTemplateBinding }}"></p>
+
+        <p>&nbsp;</p>
+
+        <p ng-non-bindable>{{main.nonBindable }}</p>
+
+    </div>
+
+
+
+</body>
+</html>

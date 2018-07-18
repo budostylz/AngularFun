@@ -2,22 +2,32 @@
 
 angular.module('myApp', []);
 
+angular.module('myApp').run(function ($rootScope) {
 
-angular.module('myApp').controller('MainController', [function () {
+    //Call from Root Scope. Root Scope will be called regardless if information is or is not inside controller.
+    $rootScope.userModel = {
+        name: 'John Smith',
+        age: 33
+    };
 
-    this.clickCount = 0;
-    this.doubleClickCount = 0;
+    $rootScope.sayHello = function () {
+        return 'Hello from Angular root scope.';
+    };
 
-    this.doClick = function () {
-        this.clickCount = this.clickCount + 1;
-    }
-
-    this.doDoubleClick = function () {
-        this.doubleClickCount = this.doubleClickCount + 1;
-    }
-
+});
 
 
+angular.module('myApp').controller('MainController', ['$scope', function ($scope) {
+
+    //Call from Child Scope
+    $scope.userModel = {
+        name: 'Jane Doe',
+        age: 22
+    };
+
+    $scope.sayHello = function () {
+        return 'Hello from Angular child scope.';
+    };
 
 }]);
 

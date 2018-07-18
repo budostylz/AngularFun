@@ -1,0 +1,29 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Angular Setup</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/using_ngChange_directives.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+        <p> We have your full name as '{{ main.fullName }}'. </p>
+        <p> &nbsp; </p>
+
+        <p> For confirmation please re-enter your full name. </p>
+        <p><input type="text" ng-change="main.doChange()" ng-model="main.fullNameConfirm" /></p>
+
+        <hr/>
+
+        <p> {{ main.message }} </p>
+
+    </div>
+
+
+
+</body>
+</html>

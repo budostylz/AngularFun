@@ -1,0 +1,38 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Angular Setup</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/using_ngMouseenter_and_ngMouseleave_directives.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+        <div class="inner-div"
+             ng-mouseenter="main.doMouseEnter($event)"
+             ng-mouseleave="main.doMouseLeave($event)"
+             ng-mouseover="main.doMouseOver($event)">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+
+        <hr />
+
+        <p> {{ 'Mouse enter count:' + main.mouseEnterCount }}</p>
+        <p> {{ 'Mouse leave count:' + main.mouseLeaveCount }}</p>
+        <p> {{ 'Mouse over count:' + main.mouseOverCount }}</p>
+
+
+
+    </div>
+
+
+
+</body>
+</html>
