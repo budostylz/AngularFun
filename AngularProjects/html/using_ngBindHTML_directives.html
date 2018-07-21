@@ -4,6 +4,7 @@
     <title>Angular Setup</title>
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../libs/angular-sanitize.js"></script>
     <script type="text/javascript" src="../js/using_ngBindHTML_directives.js"></script>
 </head>
 
@@ -11,17 +12,22 @@
 
     <div ng-controller="MainController as main" class="outer-div">
 
-        <p> {{ main.standardBind }}</p>
-        <p ng-bind="main.standardBind"></p>
+        <!--Dangerous Script and CSS tags are removed from DOM.-->
+        <p>{{ main.htmlData }}</p>
+        <p>{{ main.dangerousScript }}</p>
+        <p>{{ main.dangerousCSS }}</p>
 
-        <p>&nbsp;</p>
+        <hr />
 
-        <p>{{ main.firstTemplateBinding }} and {{ main.secondTemplateBinding }}</p>
-        <p ng-bind-template="{{ main.firstTemplateBinding }} and {{ main.secondTemplateBinding }}"></p>
+        <p ng-bind-html="main.htmlData"></p>
+        <p ng-bind-html="main.dangerousScript"></p>
+        <p ng-bind-html="main.dangerousCSS"></p>
+        
+        <!-- Styles will be allowed here. -->
+        <p ng-bind-html="main.trustedCSS"></p>
 
-        <p>&nbsp;</p>
 
-        <p ng-non-bindable>{{main.nonBindable }}</p>
+
 
     </div>
 

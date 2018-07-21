@@ -85,7 +85,6 @@ http://victorbjelkholm.github.io/ngProgress/#demo
 
 https://www.phase2technology.com/blog/caching-json-arrays-using-cachefactory-in-angularjs-1-2-x/
 
-
 ## angular.bootstrap Pattern
 
 https://jsfiddle.net/jeremylikness/wMF4x/
@@ -97,3 +96,7 @@ https://stackoverflow.com/questions/18310007/add-html-link-in-anyone-of-ng-grid
 ## OPEN A TEXT FILE WITH ANGULAR
 
 http://connor-johnson.com/2015/05/25/open-a-text-file-with-angular/
+
+## Angular Download Section
+
+https://code.angularjs.org
