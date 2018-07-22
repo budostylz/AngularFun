@@ -1,0 +1,32 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Angular Setup</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/using_ngFocus_and_ngBlur_directives.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+    	<p> Enter your name: </p>
+
+    	<p><input type="text" autofocus
+    			ng-model="main.user.name"
+    		    ng-focus="main.sayHello()"
+    		    ng-blur="main.sayGoodbye()"/>
+    	</p>
+
+    	<hr/>
+
+    	<p> {{ main.message }} </p>
+
+
+    </div>
+
+
+
+</body>
+</html>

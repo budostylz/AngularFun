@@ -1,10 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\css",
     "\\html",
+    "\\img",
     "\\js",
     "\\libs"
   ],
-  "SelectedNode": "\\js\\examining_dot_notation.js",
+  "SelectedNode": "\\js\\using_ngModel_Directive.js",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,55 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Angular Setup</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/using_ngModel_Directive.js"></script>
+</head>
+
+<body ng-controller="MainController as main">
+
+    <!-- Source: https://codepen.io/BilHim/pen/bKPBqp?page=3 -->
+
+    <form name="userForm" class="box" novalidate>
+
+        <div class="form">
+            <label>First Name:</label>
+            <input type="text" ng-model="main.user.firstName">
+
+            <label>Last Name:</label>
+            <input type="text" ng-model="main.user.lastName">
+
+            <label>Email</label>
+            <input type="text" ng-model="main.user.email">
+
+            <label>Add to mailing list?:</label>
+            <input type="checkbox" ng-model="main.user.optIn">
+
+            <label>Comments:</label>
+            <textarea ng-model="main.user.comments"></textarea><!--main.user.comments do not exist by default in the model. It will be created on the fly.-->
+
+            <label>Preferred color?</label>
+            <select ng-model="main.user.selectedColor">
+                <option ng-repeat="option in main.colors" value="{{ option.value}}">{{option.name}}</option>
+            </select>
+
+
+        </div>
+
+        <hr />
+
+        <p>Name: {{ main.user.firstName + ' ' + main.user.lastName }}</p>
+        <p>Email: {{ main.user.email }}</p>
+        <p>Opt in?: {{ main.user.optIn }}</p>
+        <p>Comments: {{ main.user.comments}}</p>
+        <p>Preferred color: <div style="width:16px;height:16px;background-color:{{ main.user.selectedColor}}"></div></p>
+
+
+
+    </form>
+
+
+
+</body>
+</html>

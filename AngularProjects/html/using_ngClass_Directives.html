@@ -1,0 +1,41 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Angular Setup</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../libs/angular-sanitize.js"></script>
+    <script type="text/javascript" src="../js/using_ngClass_Directives.js"></script>
+
+    <style>
+        .redClass{
+            color:red;
+        }
+        .greenClass {
+            color:green;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+        <p ng-class="main.class1">This is the first class.</p>
+        <p class="ng-class:main.class2">This is the second class.</p>
+
+        <hr/>
+
+        <p ng-class="{'redClass':main.isSelected, 'greenClass':!main.isSelected}">Changes based on selection.</p>
+        <p> Is Selected? <input type="checkbox" ng-model="main.isSelected" /> </p>
+
+
+
+
+    </div>
+
+
+
+</body>
+</html>
