@@ -1,10 +1,14 @@
- # Angular.js
+# Angular.js
 
 https://angularjs.org
 
 ## AngularJS API Docs
 
 https://docs.angularjs.org/api
+
+## Code Examples from Mr. David Latour
+
+https://www.linkedin.com/in/david-latour-0056153/
 
 ## AngularJS References
 http://www.w3schools.com/angular/angular_ref_directives.asp
