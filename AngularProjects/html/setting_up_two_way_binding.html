@@ -1,0 +1,31 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Angular Setup</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/setting_up_two_way_binding.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="MainController" class="outer-div">
+
+        <!--Attribute Format -->
+        <span tst-vehicle-view item="firstItem"></span>
+        <!--Element Format -->
+        <tst-vehicle-view item="secondItem"></tst-vehicle-view>
+
+        <p>First item price:</p>
+        <p><input type="text" ng-model="firstItem.price" /></p>
+
+        <p>Second item price:</p>
+        <p><input type="text" ng-model="secondItem.price" /></p>
+
+
+    </div>
+
+
+
+</body>
+</html>

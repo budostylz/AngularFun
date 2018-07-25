@@ -5,8 +5,9 @@
     "\\html",
     "\\img",
     "\\js",
-    "\\libs"
+    "\\libs",
+    "\\templates"
   ],
-  "SelectedNode": "\\js\\using_ngModel_Directive.js",
+  "SelectedNode": "\\js\\invoking_outer_scope_functions.js",
   "PreviewInSolutionExplorer": false
 }

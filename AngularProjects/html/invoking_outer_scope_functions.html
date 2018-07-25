@@ -1,0 +1,34 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Angular Setup</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/invoking_outer_scope_functions.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+        <p>Random numbers:
+            <tst-generate-numbers count="3"
+                                  on-save="main.saveFirst()"
+                                  generator-function="main.randomNumbers(count)">
+            </tst-generate-numbers>
+        </p>
+
+        <p>Sequential numbers:
+            <tst-generate-numbers count="3"
+                                  on-save="main.saveSecond()"
+                                  generator-function="main.sequentialNumbers(count)">
+            </tst-generate-numbers>
+        </p>
+
+
+    </div>
+
+
+
+</body>
+</html>

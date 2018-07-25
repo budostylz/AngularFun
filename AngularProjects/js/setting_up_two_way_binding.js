@@ -7,22 +7,15 @@ angular.module('myApp').directive('tstVehicleView', function () {
 
     return {
         scope: {//create isolate scope for every instance of $scope.item
-                //isolate scopes can be reused throughout Angular application
             item:'='
         },
-        templateUrl: '../templates/vehicle1.html',//html fragment
-        restrict:'EA'
+        templateUrl: '../templates/vehicle2.html',
+        restrict:'AE'
     };
 });
 
 angular.module('myApp').controller('MainController', ['$scope', function ($scope) {
 
-    $scope.item = {
-        year: 2014,
-        make: 'BMW',
-        model: '325i',
-        price: 28995
-    };
 
     $scope.firstItem = {
         year: 2012,
