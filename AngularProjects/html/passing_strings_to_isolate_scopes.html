@@ -1,0 +1,36 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Angular Setup</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/passing_strings_to_isolate_scopes.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+        <span tst-vehicle-view year="2013" make="Ford" info="{{ main.firstItemInfo }}" model="Fiesta"></span>
+        <span tst-vehicle-view year="2015" make="Honda" info="{{ main.secondItemInfo }}" model="Civic"></span>
+
+        <hr />
+
+        <p>First item: {{ main.firstItemInfo }}</p>
+        <p>Second item: {{ main.secondItemInfo }}</p>
+
+        <hr />
+
+        <p>First item price:</p>
+        <p><input type="text" ng-model="main.firstItemInfo.price" /></p>
+
+        <p>Second item price:</p>
+        <p><input type="text" ng-model="main.secondItemInfo.price" /></p>
+
+
+    </div>
+
+
+
+</body>
+</html>
