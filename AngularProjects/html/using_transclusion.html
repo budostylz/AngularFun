@@ -1,0 +1,27 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Using Transclusion</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/using_transclusion.js"></script>
+
+</head>
+
+<body>
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+        <!-- standard directive -->
+        <!-- <tst-user-view item="main.user"></tst-user-view> -->
+
+        <!-- transclusive directive -->
+        <!-- By default, data within directive's template override data within directive's markup.-->
+        <tst-user-view item="main.user">
+            <p>This content exists in the main controller scope. {{ main.helloMessage }}</p>
+        </tst-user-view>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Angular Setup</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/setting_dynamic_controllers.js"></script>
+
+</head>
+
+<body>
+
+    <div ng-controller="MainController" class="outer-div">
+        <div tst-animal-view item="bird" controller-name="BirdController"></div>
+        <div tst-animal-view item="horse" controller-name="HorseController"></div>
+        <div tst-animal-view item="snake" controller-name="SnakeController"></div>
+    </div>
+
+</body>
+</html>

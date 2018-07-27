@@ -1,0 +1,10 @@
+﻿<div>
+    <ul>
+        <li>{{ item.year }}</li>
+        <li>{{ item.make }}</li>
+        <li>{{ item.model }}</li>
+        <li>{{ item.price | currency }}</li>
+    </ul>
+    <hr />
+    <p><button ng-click="saveItem()">Save</button> {{ message }}</p>
+</div>
