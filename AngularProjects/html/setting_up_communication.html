@@ -1,0 +1,24 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Using Transclusion</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/setting_up_communication.js"></script>
+
+</head>
+
+<body>
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+        <tst-school-view tst-course-physics
+                         tst-course-chemistry
+                         tst-course-biology>
+
+        </tst-school-view>
+
+    </div>
+
+</body>
+</html>

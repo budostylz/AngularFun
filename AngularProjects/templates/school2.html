@@ -1,0 +1,14 @@
+﻿<div>
+    <h2>Welcome to School</h2>
+    <h3>Student List</h3>
+
+    <ul>
+        <li ng-repeat="student in students">
+            {{ student.name }} is registered. Student number is {{ student.studentNumber }}.
+        </li>
+    </ul>
+
+    <h3>Wait List Students</h3>
+
+    <div ng-transclude></div>
+</div>
