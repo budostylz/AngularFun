@@ -1,0 +1,32 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Using ngIf Directives</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/using_ngList_directives.js"></script>
+
+
+</head>
+
+<body>
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+        <!-- ngList prevents the conversion from object to primitive when updating object in DOM -->
+        <!-- ngList="|" sets custom delimiters to input field. Regular expressions can be passed into ng-list. -->
+
+        <p>Edit names:</p>
+        <p><input type="text" ng-list="|" ng-model="main.names" /></p>
+
+        <hr />
+
+        <p>Binding to names: {{ main.names }}</p>
+        <p>Type of name is: {{ main.getType(main.names) }}</p>
+        <p>First name in array: {{ main.names[0] }}</p>
+
+
+    </div>
+
+</body>
+</html>
