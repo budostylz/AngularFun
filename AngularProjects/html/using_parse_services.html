@@ -1,0 +1,22 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Using $parse Services</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/using_parse_services.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+        <button ng-click="main.executeMultiply()">Execute Multiply</button>
+        <p>Multiply Operation Output: {{ main.results }}</p>
+        <p>Selected Id: {{ main.idOfPart }}</p>
+
+
+    </div>
+
+</body>
+</html>

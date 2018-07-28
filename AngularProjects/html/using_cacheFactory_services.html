@@ -1,0 +1,56 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Using $cacheFactory Services</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/using_cacheFactory_services.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+        <p>Key: <input type="text" ng-model="main.itemKey" /></p>
+        <p>Value: <input type="text" ng-model="main.itemValue" /></p>
+        <p><button ng-click="main.addItem(main.itemKey, main.itemValue)">Add Item</button></p>
+        <hr />
+
+        <p>
+            Get Item
+            <input type="text" ng-model="main.getKey" />
+            <button ng-click="main.getItem(main.getKey)">Get</button>
+        </p>
+
+        <p>
+            Remove Item
+            <input type="text" ng-model="main.removeKey" />
+            <button ng-click="main.removeItem(main.removeKey)">Remove</button>
+        </p>
+
+        <p>Cache Info:</p>
+        <ul>
+            <li ng-repeat="(key, value) in main.cache.info()">
+                {{key}} : {{value}}
+            </li>
+        </ul>
+
+        <hr />
+        <p>Cache Values:</p>
+        <ul>
+            <li ng-repeat="key in main.keys">
+                {{key}} : {{main.cache.get(key)}}
+            </li>
+        </ul>
+
+        <hr />
+        <p>Current item:</p>
+        <p>{{ main.currentItem }}</p>
+
+
+
+
+    </div>
+
+</body>
+</html>
