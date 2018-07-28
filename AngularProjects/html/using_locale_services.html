@@ -1,0 +1,35 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Using $locale Services</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/using_locale_services.js"></script>
+
+    <!-- Display French Date and Currency -->
+    <script type="text/javascript" src="../i18n/angular-locale_fr.js"></script>
+
+    <!-- Display Russian Date and Currency -->
+    <!-- <script type="text/javascript" src="../i18n/angular-locale_ru.js"></script> -->
+
+    <!-- Display English Date and Currency -->
+    <!-- <script type="text/javascript" src="../i18n/angular-locale_en.js"></script> -->
+
+    <!-- USE 3RD PARTY API'S TO CHANGE LOCALE ON THE FLY -->
+
+
+
+</head>
+
+<body>
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+        <p>The current date in the current language is {{ main.date | date:formattedDate }}</p>
+        <p>Cost per year {{ main.cost | currency }}</p>
+
+
+    </div>
+
+</body>
+</html>
