@@ -1,4 +1,4 @@
-# Angular.js
+# Angular JavaScript
 
 https://angularjs.org
 
