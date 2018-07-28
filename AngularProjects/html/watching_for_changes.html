@@ -1,0 +1,37 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Communicating Between Nested Directives</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/watching_for_changes.js"></script>
+
+    <style>
+        .freezing{
+            color:blue;
+        }
+        .normal {
+            color: green;
+        }
+        .hot {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+        <div tst-thermometer temperature="{{ main.currentTemperature }}"></div>
+
+        <hr/>
+
+        <p>Please Enter the Current Temperature:</p>
+        <p><input type="text" ng-model="main.currentTemperature" /></p>
+        
+    </div>
+
+</body>
+</html>

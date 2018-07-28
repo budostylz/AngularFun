@@ -1,0 +1,33 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Working with Browser Events</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/using_nglf_directives.js"></script>
+
+    <style>
+
+        .rollover-box{
+            width: 100px;
+            height: 100px;
+            background-color: #eeeeee;
+            border: 1px solid #999999;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+        <tst-rollover label="This is my content." active-color="#ddffff"></tst-rollover>
+        <tst-rollover label="This is more content." active-color="#ffffdd"></tst-rollover>
+
+
+    </div>
+
+</body>
+</html>
