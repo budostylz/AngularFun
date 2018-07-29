@@ -1,0 +1,31 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Using Services to GET Data</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/using_services_to_POST_data.js"></script>
+</head>
+
+<body>
+
+    <!--A web server or web service is needed to make this work. Check corresponding js file for details.-->
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+        <p>Name: <input type="text" ng-model="main.name" /></p>
+        <p><button ng-click="main.model.addUser({name:main.name})">Add</button></p>
+
+        <hr/>
+
+        <ul>
+            <li ng-repeat="user in main.model.users">
+                {{user.name}} ({{ user.id }})
+            </li>
+        </ul>
+
+
+    </div>
+
+</body>
+</html>

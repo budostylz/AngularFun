@@ -1,0 +1,47 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Using Resource Service</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../libs/angular-resource.js"></script>
+    <script type="text/javascript" src="../js/using_resource_service.js"></script>
+</head>
+
+<body>
+
+    <!--A web server or web service is needed to make this work. Check corresponding js file for details.-->
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+        <h3>Add User</h3>
+        <p>User name: <input type="text" ng-model="main.name" /></p>
+        <p><button ng-click="main.addUser(main.name)">Add User</button></p>
+        <hr />
+
+        <h3>Get User</h3>
+        <p>User id: <input type="text" ng-model="main.id" /></p>
+        <p>
+            <button ng-click="main.getUser(main.id)">Get User</button>
+            <button ng-click="main.deleteUser(main.id)">Delete User</button>
+        </p>
+        <hr />
+
+        <h3>User Info:</h3>
+        <p>{{ main.selectedUser }}</p>
+        <hr />
+
+        <h3>All Users</h3>
+        <p><button ng-click="main.getUsers()">Get Users</button></p>
+        <ul>
+            <li ng-repeat="user in main.users">
+                {{ user.name }} ({{ user.id }})
+            </li>
+        </ul>
+
+
+
+    </div>
+
+</body>
+</html>

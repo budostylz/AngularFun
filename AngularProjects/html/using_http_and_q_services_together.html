@@ -1,0 +1,42 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Using $http and $q Services Together</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/using_http_and_q_services_together.js"></script>
+</head>
+
+<body>
+
+    <!--A web server or web service is needed to make this work. Check corresponding js file for details.-->
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+        <h3>Get a state: </h3>
+        <p>
+            Abbreviation: <input type="text" ng-model="main.abbreviation" />
+            <button ng-click="main.getState(main.abbreviation)">Get one state</button>
+        </p>
+        <hr />
+
+        <p><button ng-click="main.getSomeStates()">Get a few states</button></p>
+
+        <!--$q.all put together multiple requests to back end service and wait until all promises are fullfilled to do job-->
+        <p><button ng-click="main.getSomeStatesAtOnce()">Get a few states with a $q.all</button></p>
+
+
+        <ul>
+            <li ng-repeat="state in main.states">
+                {{ state.name }} ({{ state.abbreviation }})
+            </li>
+        </ul>
+
+
+
+
+
+    </div>
+
+</body>
+</html>

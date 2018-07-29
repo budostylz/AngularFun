@@ -1,0 +1,28 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Using Services to GET Data</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/using_services_to_GET_Data.js"></script>
+</head>
+
+<body>
+
+    <!--A web server or web service is needed to make this work. Check corresponding js file for details.-->
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+        <p><button ng-click="main.model.getStates()">Get States</button></p>
+
+        <ul>
+            <li ng-repeat="state in main.model.states">
+                {{ state.name }} ({{ state.abbreviation }})
+            </li>
+        </ul>
+
+
+    </div>
+
+</body>
+</html>

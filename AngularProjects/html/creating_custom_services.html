@@ -1,0 +1,40 @@
+﻿<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Creating Custom Services</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../libs/angular.min_v1.7.2.js"></script>
+    <script type="text/javascript" src="../js/creating_custom_services.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="MainController as main" class="outer-div">
+
+        <p>Edit from service: <input type="text" ng-model="main.model.user.name" /></p>
+        <p><button ng-click="main.model.sayHello()">Say Hello</button></p>
+
+        <div ng-controller="FirstController as first" class=" first">
+            <p>Edit first: <input type="text" ng-model="first.user.name" /></p>
+            <hr />
+            <p>Shared from service: {{ first.model.user.name }}</p>
+            <p>From first controller: {{ first.user.name }}</p>
+            <p>From second controller: {{ second.user.name }}</p>
+            <p><button ng-click="first.model.sayHello()">Say Hello</button></p>
+        </div>
+
+        <div ng-controller="SecondController as second" class=" second">
+            <p>Edit first: <input type="text" ng-model="second.user.name" /></p>
+            <hr />
+            <p>Shared from service: {{ second.model.user.name }}</p>
+            <p>From first controller: {{ first.user.name }}</p>
+            <p>From second controller: {{ second.user.name }}</p>
+            <p><button ng-click="second.model.sayHello()">Say Hello</button></p>
+        </div>
+
+
+
+    </div>
+
+</body>
+</html>
