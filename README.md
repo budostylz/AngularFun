@@ -2,6 +2,10 @@
 
 https://angularjs.org
 
+## Unit Testing AngularJS: Build Bugfree Apps That Always Work! - Course Promo
+
+https://www.youtube.com/watch?v=PwWRqf7a_uA&list=PLqL-uCNdScf9wnt4YUKK5cTVpjb-qicVW
+
 ## AngularJS API Docs
 
 https://docs.angularjs.org/api
