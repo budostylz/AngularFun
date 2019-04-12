@@ -104,3 +104,7 @@ http://connor-johnson.com/2015/05/25/open-a-text-file-with-angular/
 ## Angular Download Section
 
 https://code.angularjs.org
+
+## How to add CORS request in header in Angular 5
+
+https://stackoverflow.com/questions/47345282/how-to-add-cors-request-in-header-in-angular-5
