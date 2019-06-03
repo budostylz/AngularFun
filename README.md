@@ -108,3 +108,6 @@ https://code.angularjs.org
 ## How to add CORS request in header in Angular 5
 
 https://stackoverflow.com/questions/47345282/how-to-add-cors-request-in-header-in-angular-5
+
+## The ngModel doesn’t listen to typical listeners in javascript or jquery 
+https://stackoverflow.com/questions/17109850/update-angular-model-after-setting-input-value-with-jquery
